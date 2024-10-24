@@ -1,0 +1,75 @@
+<html>
+	<head>
+<title>Aula3</title>
+	</head>
+	<body>
+	<center><font face="Arial" color="brown" size= "10">Formulário de Contato</font></center>
+	<br/>
+	<form action="enviado.html" method="post">
+
+	<label for="nome">Nome: </label>
+	<input type="text" id="nome" name="nome" required>
+	<br/>
+	<br/>
+	<label for="email">E-mail: </label>
+	<input type="text" id="email" name="email" required>
+	<br/>
+	<br/>
+	<label for="celular">Celular: </label>
+	<input type="number" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx"> 
+
+	<label for="tel">Telefone: </label>
+	<input type="number" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx"> 
+	<br/>
+	<br/>
+	<label for="genero">Gênero: </label>
+		<select name="select_genero">
+		<option value="option_genero"></option>
+		<option value="option_genero">Feminino</option>
+		<option value="option_genero">Masculino</option>
+		<option value="option_genero">Outro</option>
+</select>
+<br/>
+<br/>
+	<label for="data_nascimento">Data de Nascimento: </lable>
+	<input type="date" id="data_nascimento"name="data_nascimento">
+
+	<label for "idade">Idade: </label>
+	<input type="number" id="idade" name="idade" min="0">
+<br/>
+<br/>
+	<label for="idioma">Escolha o didioma cujo você tem a maior fluencia: </label>
+	<input type="radio" id="idioma" name="idioma" value="espanhol"> Espanhol
+	<input type="radio" id="idioma" name="idioma" value="ingles"> Inglês
+	<input type="radio" id="idioma" name="idioma" value="frances"> Francês
+	<input type="radio" id="idioma" name="idioma" value="italiano"> Italiano
+	<input type="radio" id="idioma" name="idioma" value="esperanto"> Esperanto
+	<input type="radio" id="idioma1" name="idioma1" value="portugues"> Português
+	<input type="radio" id="idioma" name="idioma" value="outro"> Outro
+<br/><br/>
+	<label for="outro_idioma">Outro Idioma: </label>
+	<input type="text" id="outro_idioma" name="outro_idioma" placeholder=""Insira idioma...">
+<br/><br/>
+	<label for="upload_arquivo">Insira o seu currículo: </label>
+	<input type="file" id="upload_arquivo" name="upload_arquivo">
+<br/><br/>
+	<label for="termo_uso">Leia os termos: </label>
+<iframe src="termo_uso.pdf" width="100%" heitgh="500">Termo de Uso </iframe>
+<br/><br/>
+	<input type="checkbox" id="termo_uso" name="termo_uso" required>
+	<label for="termo_uso">Li e Aceito os Termos de Uso</label>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<button type="submit">Enviar</button>
+<center><a href="aulas.html" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8BAAIAAADW1taurq5zcnN1dXbPz8+4uLnh4eHa2tqZmZkrKyvc3Nzq6urg4OBlZWVkZGQWFRZqampTU1Pv7++Pj4/t7e0MCwxFRUU9PT75+fkJCAq8vLw6OjtBQUKIiIl+fn5aWlseHR4tLS2goKBOTk8ZGBmNjY7+PLjbAAAFDklEQVR4nO2d7VriMBCFa1QQlWU/xG8UUXf3/q9wKW0wadM20yaZafe8P5FH88qczGBKzTIAAAAAAACqrJdr7iVEZXGjlHp74l5GPFZ7vxOldtzriMZy75ejvnOvJBKXpeD+VZym4lEwV/zFvZoIrL4Ec8Uf3OsJzqUpOEXFiuD0CnVZFZzadrM0Nxk1QUVzF32/naCiKfhzkV0ZitPI4sos0cX+AVNxCjuqlcFvh4euJlWoZoneL8oH2wr17nTexELim5KlnUFNo+J6plq4vkgu0EUtg5qmLD7UG6fZQtUmtUEHl/UMatyKFy1+RaGnVmjn0l2iBc5CfesyVMvEDq0sXZvMF64d9abTcJ7WoRVHm7BxKI7K0CzRZ5egS3FMhq0Z1NSyqA3rjUKcYWObsKnuqKWher+w2WyVMMOWNmFTUdSGH9XnbYQZepVogV2o2vC6+rQLWYYNo5obU3E2EkPPDGpMRTUKQ+8MakzFkxEYEjKouaqO26INzRJ99hOsK0o27BzV3FQUBRta7+j9BauKcg17ZFBjKYo1JLYJG1NRqiG5TdgYikINB5RogdEXRRp2vKP34ahYn7wFGA7KoEYrqofqV/gNB2ZQUygqVfu7KLvh4AxqPg9v6Ge1x7kNg5Rowenb73PHn32ZDXuOahR4DZ2HL4FhNSS9o+8Lp2HADLbAaBioTXTBZxisTXTAZrhKsMkc4DJcpSnRjM3Q4/AlFDyGqTKYw2KYpk2UcBgmGNUMGAxTlmjGYZhkVDNIbpg0gzmpDRONagaJDRNnMCetYa/Dl4EkNUzbJkqOhqfxf1bvw5dB6AveElxVnLpNlBwNoysmbxMlc/fFmuFhyeCBRNeGM7QJzSbJFf4BDl/6k+Lyd64MlsRXTD+qVYityJhBTdxP2zCXaEHMT9vwtQmLeIWa4vDFi1iFyjSquYijKCKDmhhZZG8TNuEVBbQJm9CFmuzwxZ+wO2q6wxcCIRUTHr5QCKcoLoOaUFlcSGoTNmF2VCGjmpsQimJLtGB4oQoa1dwMVRQ1qrkZtqMKG9XcDMmi8Axq+hcqx+FLL/oWqshRzU0/RZ7Dl570URTfJmzoWRQ8qrmh7qiiRzU3NMWRtAkbSqGyHr70x3+7GcGo5sZXcRSjmhu/LI4ygxqfLJolejI2QZ9XcYRtwqYri2IOX/rTXqgjG9XctCmOblRz05zF0WdQ06Q46jZh4y5Us038Gbege0e1RrX5+lvO3d3d+sjTHtZVk/isKVo3MW6+K+NM2B3/N7OXksc9rwUPe3b3xguWK66fDcFmlPoQ9Tqet9wi01z1PotbL8H82VtuK4Mz5bfs/IPvP70Nazc6YOTVe9WPmV+RHn4d3FoGni/hYdW7iRt+ZHPlXdLcWga+hkp95heJdyHYsHPtN/mz15vPqwq3X/y9fVViDdX77weLQ1d8LHl52Z15fbeZYMP6PUIKngo8v9v5CA1pwJADGNKAIQcwpAFDDmBIA4YcwJAGDDmAIQ0YcgBDGjDkAIY0YMgBDGnAkAMY0oAhBzCkAUMOYEgDhhzAkAYMOYAhDRhyAEMaMOQAhjRgyAEMacCQAxjSgCEHMKQBQw5gSAOGHMCQBgw5gCENGHIAQxow5ACGNGDIAQxp/EeGZ3KIYth9H5GUnMQwFAgMYVjyV7DhbRDDufdtp1IT7J9Y/1IiHVXA/5635e4NDWxDCWbZ0+JUHgtRN3IEAAAAAACD+AemFFDreSsO4QAAAABJRU5ErkJggg==" width= "80" height= "80" ></center>
+
+</form>
+	</body>
+ 
+
+
+</html>
